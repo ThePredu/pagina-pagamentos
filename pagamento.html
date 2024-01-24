@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./scripts.js" defer></script>
+</head>
+<body>
+     <div class="container">
+        <form action="">
+
+            <div class="row">
+                <div class="col">
+                    <div class="addres">
+                    <h3 class="title">Endereço</h3>
+
+                        <div class="input-box">
+                            <span>Nome Completo:</span>
+                            <input type="text" placeholder="Seu Nome">
+                        </div>
+                        <div class="input-box">
+                            <span>Numero de Telefone:</span>
+                            <input type="number" placeholder="+11 9123456789">
+                        </div>
+                        <div class="input-box">
+                            <span>Rua</span>
+                            <input type="text" placeholder="Rua,Casa, Numero">
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="input-box">
+                                <span>Bairro</span>
+                                <input type="text" placeholder="Nome do Bairro">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="col">
+
+                    <h3 class="title">Selecione o Metodo de Pagamento</h3>
+                    <button  class="payment-selector-btn" id="card-btn" type="button">Cartão</button>
+                    <button  class="payment-selector-btn" id="pix-btn" type="button">pix</button>
+                    
+
+                        <div id="credit-card">
+                            <div class="input-box">
+                                <span>Cartões Aceitos</span>
+                                <img src="./images/news_image.png" alt="cartoes">
+                            </div>
+
+                            <div class="input-box">
+                                <span>Nome do Titular do Cartão</span>
+                                <input type="text" placeholder="Nome">
+                            </div>
+
+                            <div class="input-box">
+                                <span>Numero do Cartão</span>
+                                <input type="number" placeholder="1111-2222-3333-4444">
+                            </div>
+
+                            <div class="input-box">
+                                <span>Mês de Validade</span>
+                                <input type="text" placeholder="Janeiro">
+                            </div>
+                            
+                            <div class="flex">
+                                <div class="input-box">
+                                    <span>Ano de Validade</span>
+                                    <input type="text" placeholder="2000">
+                                </div>
+
+                                <div class="input-box">
+                                    <span>CVV</span>
+                                    <input type="number" placeholder="000">
+                                </div>
+                            </div>    
+                        </div>
+
+                        <div class="pix-info" id="pix">
+                            <div class="input-box">
+                                <span>QR Code</span>
+                                <img class="qr-code-img" src="./images/sample-QR.png" alt="qr-code">
+                            </div>
+
+                            <div class="input-box">
+                                <span>Codigo Pix</span>
+                                <h3>0000 FFFF 2222 BBBB</h3>
+                                <button class="payment-selector-btn" type="button">Copie Aqui !</button>
+                            </div>
+
+
+                        </div>
+            </div>
+        </div>
+
+        <input type="submit" value="Continue para o Pagamento" class="submit-btn">
+        
+        </form>
+    </div>
+
+    
+        
+
+    
+</body>
+</html>
